@@ -1,25 +1,19 @@
+from langdetect import detect
+
 def detect_language(text):
+    try:
+        language = detect(text)
 
-    text = text.lower()
+        languages = {
+            "pt": "Portuguese",
+            "en": "English",
+            "es": "Spanish",
+            "fr": "French",
+            "de": "German",
+            "it": "Italian"
+        }
 
-    english_words = [
-        "experience",
-        "education",
-        "skills",
-        "english",
-        "work",
-        "manager",
-        "project",
-        "professional"
-    ]
+        return languages.get(language, language)
 
-    score = 0
-
-    for word in english_words:
-        if word in text:
-            score += 1
-
-    if score >= 2:
-        return "English"
-
-    return "Português"
+    except:
+        return "Unknown"
