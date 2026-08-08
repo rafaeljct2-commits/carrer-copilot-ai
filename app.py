@@ -15,7 +15,7 @@ uploaded_file = st.file_uploader(
 if uploaded_file:
     text = extract_text(uploaded_file)
 
-   st.subheader("Extracted Resume Text")
+    st.subheader("Extracted Resume Text")
     st.write(text)
 
     skills = analyze_skills(text)
@@ -41,5 +41,6 @@ if uploaded_file:
     if "power bi" not in skills:
         recommendations.append("Aprender Power BI")
 
-    for item in recommendations:
-        st.info(item)
+    for recommendation in recommendations:
+        st.info(recommendation)
+ 
