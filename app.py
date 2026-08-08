@@ -3,7 +3,6 @@ import streamlit as st
 from utils.pdf_reader import extract_text
 from utils.skill_analyzer import analyze_skills
 from utils.language_detector import detect_language
-from utils.ai_analyzer import analyze_resume
 
 st.set_page_config(page_title="Career Copilot AI")
 
@@ -55,8 +54,4 @@ if uploaded_file:
     for recommendation in recommendations:
         st.info(recommendation)
 
-    st.subheader("AI Career Analysis")
-
-    if st.button("Analyze Resume with AI"):
-        analysis = analyze_resume(text)
-        st.write(analysis)
+  
