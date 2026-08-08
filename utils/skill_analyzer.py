@@ -6,41 +6,9 @@ def analyze_skills(text):
         "English": [
             "english",
             "ingles",
-            "inglês"
-        ],
-
-        "Administration": [
-            "administration",
-            "administração",
-            "administracao"
-        ],
-
-        "Logistics": [
-            "logistics",
-            "logistic",
-            "logística",
-            "logistica"
-        ],
-
-        "Microsoft Office": [
-            "microsoft office",
-            "office",
-            "word",
-            "excel",
-            "powerpoint",
-            "pacote office"
-        ],
-
-        "Digital Marketing": [
-            "digital marketing",
-            "marketing digital"
-        ],
-
-        "Artificial Intelligence": [
-            "artificial intelligence",
-            "inteligência artificial",
-            "inteligencia artificial",
-            "ai"
+            "inglês",
+            "anglais",
+            "englisch"
         ],
 
         "Python": [
@@ -55,10 +23,29 @@ def analyze_skills(text):
             "power bi"
         ],
 
-        "Data Analysis": [
-            "data analysis",
-            "data analyst",
-            "analytics"
+        "Logistics": [
+            "logistics",
+            "logistica",
+            "logística",
+            "logistique",
+            "logistik"
+        ],
+
+        "Administration": [
+            "administration",
+            "administração",
+            "administracao",
+            "verwaltung",
+            "administración"
+        ],
+
+        "Artificial Intelligence": [
+            "artificial intelligence",
+            "inteligência artificial",
+            "inteligencia artificial",
+            "intelligence artificielle",
+            "kunstliche intelligenz",
+            "ai"
         ]
     }
 
