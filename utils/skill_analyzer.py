@@ -3,34 +3,41 @@ def analyze_skills(text):
     text = text.lower()
 
     skills_database = {
-        "Inglês": [
-            "inglês",
+        "English": [
+            "english",
             "ingles",
-            "english"
+            "inglês"
         ],
 
-        "Administração": [
+        "Administration": [
+            "administration",
             "administração",
             "administracao"
         ],
 
-        "Logística": [
-            "logístico",
-            "logistica",
-            "logística"
+        "Logistics": [
+            "logistics",
+            "logistic",
+            "logística",
+            "logistica"
         ],
 
-        "Pacote Office": [
-            "pacote office",
+        "Microsoft Office": [
             "microsoft office",
-            "office"
+            "office",
+            "word",
+            "excel",
+            "powerpoint",
+            "pacote office"
         ],
 
-        "Marketing Digital": [
+        "Digital Marketing": [
+            "digital marketing",
             "marketing digital"
         ],
 
-        "Inteligência Artificial": [
+        "Artificial Intelligence": [
+            "artificial intelligence",
             "inteligência artificial",
             "inteligencia artificial",
             "ai"
@@ -46,6 +53,12 @@ def analyze_skills(text):
 
         "Power BI": [
             "power bi"
+        ],
+
+        "Data Analysis": [
+            "data analysis",
+            "data analyst",
+            "analytics"
         ]
     }
 
@@ -58,4 +71,3 @@ def analyze_skills(text):
                 break
 
     return found_skills
-  
