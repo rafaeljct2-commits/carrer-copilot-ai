@@ -1,28 +1,61 @@
 def analyze_skills(text):
-    skills_database = [
-        "python",
-        "excel",
-        "power bi",
-        "sql",
-        "ingles",
-        "english",
-        "marketing digital",
-        "logistica",
-        "gestao",
-        "pacote office",
-        "powerpoint",
-        "word",
-        "ai",
-        "inteligencia artificial",
-        "machine learning"
-    ]
+
+    text = text.lower()
+
+    skills_database = {
+        "Inglês": [
+            "inglês",
+            "ingles",
+            "english"
+        ],
+
+        "Administração": [
+            "administração",
+            "administracao"
+        ],
+
+        "Logística": [
+            "logístico",
+            "logistica",
+            "logística"
+        ],
+
+        "Pacote Office": [
+            "pacote office",
+            "microsoft office",
+            "office"
+        ],
+
+        "Marketing Digital": [
+            "marketing digital"
+        ],
+
+        "Inteligência Artificial": [
+            "inteligência artificial",
+            "inteligencia artificial",
+            "ai"
+        ],
+
+        "Python": [
+            "python"
+        ],
+
+        "SQL": [
+            "sql"
+        ],
+
+        "Power BI": [
+            "power bi"
+        ]
+    }
 
     found_skills = []
 
-    text_lower = text.lower()
-
-    for skill in skills_database:
-        if skill in text_lower:
-            found_skills.append(skill)
+    for skill, keywords in skills_database.items():
+        for keyword in keywords:
+            if keyword in text:
+                found_skills.append(skill)
+                break
 
     return found_skills
+  
